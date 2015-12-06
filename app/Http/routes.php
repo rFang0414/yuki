@@ -15,27 +15,27 @@
 //    return view('welcome');
 //});
 
-Route::get('/home', 'HomeController@index');
-Route::get('/woman', 'HomeController@woman');
-Route::get('/new_in', 'HomeController@new_in');
-Route::get('/members', 'HomeController@member');
+Route::get('home', 'HomeController@index');
+Route::get('woman', 'HomeController@woman');
+Route::get('new_in', 'HomeController@new_in');
+Route::get('members', 'HomeController@member');
 
 
-Route::get('/register', 'UserController@registerpage');
-Route::post('/register', 'UserController@signup');
+Route::get('register', 'UserController@registerpage');
+Route::post('register', 'UserController@signup');
 
 
-Route::get('/sign_in', 'UserController@signin');
-Route::post('/sign_in', 'UserController@login');
-Route::get('/sign_out', 'UserController@logout');
-Route::get('/my_page','UserController@my_page');
-Route::post('/my_page','UserController@my_page_edit');
+Route::get('sign_in', 'UserController@signin');
+Route::post('sign_in', 'UserController@login');
+Route::get('sign_out', 'UserController@logout');
+Route::get('my_page','UserController@my_page');
+Route::post('my_page','UserController@my_page_edit');
 
-Route::get('/online_survey','SurveyController@survey_page');
-Route::post('/online_survey','SurveyController@submit_survey');
+Route::get('online_survey','SurveyController@survey_page');
+Route::post('online_survey','SurveyController@submit_survey');
 
 
-Route::get('/people', 'UserController@people_page');
+Route::get('people', 'UserController@people_page');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

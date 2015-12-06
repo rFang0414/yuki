@@ -15,7 +15,7 @@
                 <h1 class="text-center text-primary">My Infomation</h1>
             </div>
             <div class="modal-body">
-                <form action="/my_page" method="post" class="form col-md-12 center-block">
+                <form action="my_page" method="post" class="form col-md-12 center-block">
                     <div class="form-group">
                         <input value={{$user->Username}} name="Username" id="username" type="text" class="form-control input-lg" placeholder="Username to login" readonly required>
                     </div>

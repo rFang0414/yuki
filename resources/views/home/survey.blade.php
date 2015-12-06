@@ -98,7 +98,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">Survey</div>
             <div class="panel-body">
-                <form action="/online_survey" method="post" onsubmit="valid_form()">
+                <form action="online_survey" method="post" onsubmit="valid_form()">
                     <div class="radio">
                         <label><span>1:<br>Gender:</span></label>
                         <label>

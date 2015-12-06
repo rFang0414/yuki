@@ -34,7 +34,7 @@ class UserController extends Controller
         if($user != null && $Password == $user->Password)
         {
             session(['user'=>$user]);
-            $redirect = '/';
+            $redirect = '/home';
             if(session('back'))
             {
                 $redirect = session('back');
@@ -48,7 +48,7 @@ class UserController extends Controller
     public function logout()
     {
         session()->clear();
-        return redirect('/');
+        return redirect('home');
     }
 
 
@@ -72,7 +72,7 @@ class UserController extends Controller
         $user->save();
 
         session(['user'=>$user]);
-        return redirect('/');
+        return redirect('home');
     }
 
     public function my_page()
@@ -81,7 +81,7 @@ class UserController extends Controller
         if($user==null)
         {
             session(['back'=>'my_page']);
-            return redirect('/sign_in');
+            return redirect('sign_in');
         }
         return view('user.my');
     }

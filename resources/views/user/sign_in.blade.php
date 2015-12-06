@@ -12,7 +12,7 @@
                 </div>
             @endif
             <div class="modal-body">
-                <form action="/sign_in" method="post" class="form col-md-12 center-block">
+                <form action="sign_in" method="post" class="form col-md-12 center-block">
                     <div class="form-group">
                         <input name="Username" type="text" class="form-control input-lg" placeholder="Username" required>
                     </div>

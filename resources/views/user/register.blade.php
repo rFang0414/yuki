@@ -36,7 +36,7 @@
             </div>
             @endif
             <div class="modal-body">
-                <form action="/register" method="post" class="form col-md-12 center-block">
+                <form action="register" method="post" class="form col-md-12 center-block">
                     <div class="form-group">
                         <input id="username" name="Username" type="text" class="form-control input-lg" placeholder="Username to login" required>
                     </div>
