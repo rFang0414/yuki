@@ -22,7 +22,7 @@
                     <div class="form-group">
                         <button class="btn btn-primary btn-lg btn-block">Login Now</button>
                         <span><a href="#">forget password</a></span>
-                        <span><a href="/register" class="pull-right">Register</a></span>
+                        <span><a href="register" class="pull-right">Register</a></span>
                     </div>
                 </form>
             </div>
