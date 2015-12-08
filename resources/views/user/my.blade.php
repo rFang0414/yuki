@@ -17,10 +17,10 @@
             <div class="modal-body">
                 <form action="my_page" method="post" class="form col-md-12 center-block">
                     <div class="form-group">
-                        <input value={{$user->Username}} name="Username" id="username" type="text" class="form-control input-lg" placeholder="Username to login" readonly required>
+                        <input value="{{$user->Username}}" name="Username" id="username" type="text" class="form-control input-lg" placeholder="Username to login" readonly required>
                     </div>
                     <div class="form-group">
-                        <input value={{$user->Name}} name="name" type="text" class="form-control input-lg" placeholder="Your real name" required>
+                        <input value="{{$user->Name}}" name="name" type="text" class="form-control input-lg" placeholder="Your real name" required>
                     </div>
                     <div class="form-group">
                         <input value="{{$user->DOB or ''}}" name="DOB" type="text" class="form-control input-lg" id="datepicker" placeholder="Date of Born" required></p>

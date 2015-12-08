@@ -1,36 +1,12 @@
 @extends('header&footer')
 @section('content')
 <?php
-$res = null;
-if(!empty($_POST['sub'])){
-    $fName = $_POST['first_name'];
-    $lName = $_POST['last_name'];
-    $gender = $_POST['gender'];
-    $email = $_POST['email'];
-    $state = $_POST['state'];
-
-    if(!empty($fName) && !empty($lName) && !empty($gender) && !empty($email) && !empty($state)){
-        include_once 'db_conn.php';
-        $sql = "INSERT INTO members
-            (Lastname, Firstname, email, Gender, State)
-            VALUES
-            ('{$lName}', '{$fName}', '{$email}', '{$gender}', '{$state}')
-            ";
-        $result = $mysqli->query($sql);
-        if($result){
-            $res = 'Submit success!';
-        }
-        else{
-            $res = 'Submit fail!';
-        }
-    }
-}
 ?>
 
 <div class="container">
     <h3>Members Form</h3>
     <hr/>
-    <form onsubmit="return checkForm();" method="post" action="member.php">
+    <form onsubmit="return checkForm();" method="post" action="add_member">
         <table>
             <tr>
                 <td>
@@ -116,7 +92,7 @@ if(!empty($_POST['sub'])){
 
 <script type="text/javascript" language="javascript">
     <?php if(!empty($res)): ?>
-    $('#error_tip').html('<?php echo $res; ?>');
+    $('#error_tip').html('{{$res}}');
     $('#error').modal('show');
     $('#btn').unbind();
     $('#btn').click(function(){

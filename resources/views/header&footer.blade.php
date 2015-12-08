@@ -26,15 +26,13 @@
 			<li role="presentation"><a href="members">Members</a></li>
 			<li role="presentation"><a href="people">People</a></li>
 			<li role="presentation"><a href="online_survey">Online survey</a></li>
-			@if($user != null && $user->Access == 1)
-				<li role="presentation"><a href="">Admin</a></li>
-			@endif
+			<li role="presentation"><a href="my_page">My Page</a></li>
+			<li role="presentation"><a href="admin_page">Admin</a></li>
 
 			@if( $user != null )
 				<li role="presentation" class="pull-right"><a href="sign_out">Logout</a></li>
 				<li role="presentation" class="pull-right"><a href="my_page">Welcome {{$user->Username}}!</a></li>
 			@else
-				<li role="presentation"><a href="my_page">My Page</a></li>
 				<li role="presentation" class="pull-right"><a href="sign_in">Login/Sign Up</a></li>
 			@endif
 		</ul>

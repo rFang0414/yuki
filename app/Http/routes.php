@@ -34,6 +34,10 @@ Route::post('my_page','UserController@my_page_edit');
 Route::get('online_survey','SurveyController@survey_page');
 Route::post('online_survey','SurveyController@submit_survey');
 
+Route::post('add_member','UserController@add_member');
+
+Route::get('admin_page','UserController@admin_page');
+Route::post('change_access','UserController@change_access');
 
 Route::get('people', 'UserController@people_page');
 

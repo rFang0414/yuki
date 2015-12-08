@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Request;
 use App\User;
+use App\Members;
 
 class UserController extends Controller
 {
@@ -22,6 +23,19 @@ class UserController extends Controller
     public function signin()
     {
         return view('user.sign_in');
+    }
+
+    public function admin_page()
+    {
+        $user = session('user');
+        if($user==null)
+        {
+            session(['back'=>'admin_page']);
+            return redirect('sign_in');
+        }
+
+        $users = User::all();
+        return view('user.admin',['users'=>$users]);
     }
 
     public function login()
@@ -103,6 +117,34 @@ class UserController extends Controller
         return view('user.my');
     }
 
+    public function change_access()
+    {
+        $Accesses = Request::all();
+
+        $users = User::all();
+        $index = 1;
+        foreach($users as $user)
+        {
+            $user->Access = $Accesses[$index];
+            $index++;
+            $user->save();
+        }
+
+        return redirect('admin_page');
+    }
+
+    public function add_member()
+    {
+        $input = Request::all();
+        $lastname = $input['last_name'];
+        $firstname = $input['first_name'];
+        $gender = $input['gender'];
+        $email = $input['email'];
+        $state = $input['state'];
+
+        Members::create(['Lastname'=>$lastname, 'Firstname'=>$firstname, 'email'=>$email, 'state'=>$state, 'gender'=>$gender]);
+        return view('home.member', ['res'=>'Submit Succesful']);
+    }
 }
 
 
