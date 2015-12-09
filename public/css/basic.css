@@ -6,7 +6,7 @@ ul,li,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
 #top-bar{background: #333;padding: 20px 0;}
 #top-bar p{text-align: center;font-size: 40px;font-weight: bold;color: #555;}
 #links{list-style: none;margin: 0 auto;text-align: center;}
-#main{background: #fff;height: 500px;border-top: 2px solid #bb9f3f;padding: 50px 0;min-height: 650px;}
+#main{background: #fff;border-top: 2px solid #bb9f3f;padding: 50px 0;min-height: 650px;}
 table tr td{height: 60px;}
 .intro_title{color: #bcaf97;}
 .links-ul{list-style: none;}

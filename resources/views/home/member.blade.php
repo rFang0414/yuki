@@ -4,7 +4,10 @@
 ?>
 
 <div class="container">
-    <h3>Members Form</h3>
+    <ol class="breadcrumb">
+        <li>Home</li>
+        <li class="active">Member</li>
+    </ol>
     <hr/>
     <form onsubmit="return checkForm();" method="post" action="add_member">
         <table>

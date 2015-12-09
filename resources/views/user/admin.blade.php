@@ -8,6 +8,10 @@
         }
     ?>
     <div class="container">
+        <ol class="breadcrumb">
+            <li>Home</li>
+            <li class="active">Administration</li>
+        </ol>
         <form method="post" action="change_access">
         <table class="table table-condensed">
             <thead>

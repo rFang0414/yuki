@@ -87,7 +87,10 @@
 </script>
 <div class="container-fluid">
     <div class="row col-md-offset-3 col-md-6">
-        <h2 class="intro_title">Online Survey</h2>
+        <ol class="breadcrumb">
+            <li>Home</li>
+            <li class="active">Member</li>
+        </ol>
         <hr/>
         @if(isset($error))
             <div class="alert alert-danger" role="alert">
@@ -140,11 +143,13 @@
                         </div>
                     </div>
                     <br><hr>
-                    <div class="form-group col-md-6">
-                        <button type="submit" class="btn btn-primary btn-sm btn-block">Submit</button>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <button type="reset" class="btn btn-primary btn-sm btn-block" onclick="reset_form()">Reset</button>
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="form-group col-md-6">
+                            <button type="submit" class="btn btn-primary btn-sm btn-block">Submit</button>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <button type="reset" class="btn btn-primary btn-sm btn-block" onclick="reset_form()">Reset</button>
+                        </div>
                     </div>
                 </form>
             </div>

@@ -20,6 +20,7 @@ Route::get('woman', 'HomeController@woman');
 Route::get('new_in', 'HomeController@new_in');
 Route::get('members', 'HomeController@member');
 
+Route::get('product_detail','HomeController@product_detail');
 
 Route::get('register', 'UserController@registerpage');
 Route::post('register', 'UserController@signup');

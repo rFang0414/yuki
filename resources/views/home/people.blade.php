@@ -4,7 +4,10 @@
 </script>
 <div class="container-fluid">
     <div class="panel-group col-md-8 col-md-offset-2" id="accordion" role="tablist" aria-multiselectable="true">
-        <h2 class="intro_title">People Page</h2>
+        <ol class="breadcrumb">
+            <li>Home</li>
+            <li class="active">People</li>
+        </ol>
         <h4>You can see staff's information here</h4>
         <hr/>
         <?php
