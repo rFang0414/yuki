@@ -3,16 +3,16 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<title>home</title>
-	<link rel="stylesheet" href="/css/bootstrap-3.3.5.min.css">
-	<link rel="stylesheet" href="/css/bootstrap-3.3.5-theme.min.css">
-	<link rel="stylesheet" href="/css/basic.css">
-	<link rel="stylesheet" href="/css/home.css">
-	<script src="/js/jquery-2.1.4.min.js" type="text/javascript"></script>
-	<script src="/js/bootstrap-3.3.5.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/bootstrap-3.3.5.min.css">
+	<link rel="stylesheet" href="css/bootstrap-3.3.5-theme.min.css">
+	<link rel="stylesheet" href="css/basic.css">
+	<link rel="stylesheet" href="css/home.css">
+	<script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap-3.3.5.min.js" type="text/javascript"></script>
 
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-	<script src="/themes/js/jquery.scrolltotop.js"></script>
+	<script src="themes/js/jquery.scrolltotop.js"></script>
 </head>
 <?php
 	$user = session('user')

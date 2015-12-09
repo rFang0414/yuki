@@ -1,19 +1,19 @@
 @extends('header&footer')
         <!-- bootstrap -->
-<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 
 <!-- global styles -->
-<link href="/themes/css/main.css" rel="stylesheet"/>
-<link href="/themes/css/jquery.fancybox.css" rel="stylesheet"/>
+<link href="themes/css/main.css" rel="stylesheet"/>
+<link href="themes/css/jquery.fancybox.css" rel="stylesheet"/>
 
 @section('content')
     <div class="container-fluid">
         <!-- scripts -->
-        <script src="/themes/js/jquery-1.7.2.min.js"></script>
-        <script src="/bootstrap/js/bootstrap.min.js"></script>
-        <script src="/themes/js/superfish.js"></script>
-        <script src="/themes/js/jquery.fancybox.js"></script>
+        <script src="themes/js/jquery-1.7.2.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="themes/js/superfish.js"></script>
+        <script src="themes/js/jquery.fancybox.js"></script>
 
         <section class="main-content" style="width: 1200px; margin: auto">
             <ol class="breadcrumb">
@@ -25,19 +25,19 @@
                 <div class="span9">
                     <div class="row">
                         <div class="span4">
-                            <a href="/images/ladies/1.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 1"><img alt="" src="/images/ladies/1.jpg"></a>
+                            <a href="images/ladies/1.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 1"><img alt="" src="images/ladies/1.jpg"></a>
                             <ul class="thumbnails small">
                                 <li class="span1">
-                                    <a href="/images/ladies/2.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 2"><img src="/images/ladies/2.jpg" alt=""></a>
+                                    <a href="images/ladies/2.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 2"><img src="images/ladies/2.jpg" alt=""></a>
                                 </li>
                                 <li class="span1">
-                                    <a href="/images/ladies/3.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 3"><img src="/images/ladies/3.jpg" alt=""></a>
+                                    <a href="images/ladies/3.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 3"><img src="images/ladies/3.jpg" alt=""></a>
                                 </li>
                                 <li class="span1">
-                                    <a href="/images/ladies/4.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 4"><img src="/images/ladies/4.jpg" alt=""></a>
+                                    <a href="images/ladies/4.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 4"><img src="images/ladies/4.jpg" alt=""></a>
                                 </li>
                                 <li class="span1">
-                                    <a href="/images/ladies/5.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 5"><img src="/images/ladies/5.jpg" alt=""></a>
+                                    <a href="images/ladies/5.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 5"><img src="images/ladies/5.jpg" alt=""></a>
                                 </li>
                             </ul>
                         </div>
@@ -105,7 +105,7 @@
                                             <li class="span3">
                                                 <div class="product-box">
                                                     <span class="sale_tag"></span>
-                                                    <a href=""><img alt="" src="/images/ladies/6.jpg"></a><br/>
+                                                    <a href=""><img alt="" src="images/ladies/6.jpg"></a><br/>
                                                     <a href="" class="title">Wuam ultrices rutrum</a><br/>
                                                     <a href="#" class="category">Suspendisse aliquet</a>
                                                     <p class="price">$341</p>
@@ -114,7 +114,7 @@
                                             <li class="span3">
                                                 <div class="product-box">
                                                     <span class="sale_tag"></span>
-                                                    <a href=""><img alt="" src="/images/ladies/5.jpg"></a><br/>
+                                                    <a href=""><img alt="" src="images/ladies/5.jpg"></a><br/>
                                                     <a href="" class="title">Fusce id molestie massa</a><br/>
                                                     <a href="#" class="category">Phasellus consequat</a>
                                                     <p class="price">$341</p>
@@ -122,7 +122,7 @@
                                             </li>
                                             <li class="span3">
                                                 <div class="product-box">
-                                                    <a href=""><img alt="" src="/images/ladies/4.jpg"></a><br/>
+                                                    <a href=""><img alt="" src="images/ladies/4.jpg"></a><br/>
                                                     <a href="" class="title">Praesent tempor sem</a><br/>
                                                     <a href="#" class="category">Erat gravida</a>
                                                     <p class="price">$28</p>
@@ -135,7 +135,7 @@
                                             <li class="span3">
                                                 <div class="product-box">
                                                     <span class="sale_tag"></span>
-                                                    <a href=""><img alt="" src="/images/ladies/1.jpg"></a><br/>
+                                                    <a href=""><img alt="" src="images/ladies/1.jpg"></a><br/>
                                                     <a href="" class="title">Fusce id molestie massa</a><br/>
                                                     <a href="#" class="category">Phasellus consequat</a>
                                                     <p class="price">$341</p>
@@ -143,7 +143,7 @@
                                             </li>
                                             <li class="span3">
                                                 <div class="product-box">
-                                                    <a href=""><img alt="" src="/images/ladies/2.jpg"></a><br/>
+                                                    <a href=""><img alt="" src="images/ladies/2.jpg"></a><br/>
                                                     <a href="">Praesent tempor sem</a><br/>
                                                     <a href="#" class="category">Erat gravida</a>
                                                     <p class="price">$28</p>
@@ -152,7 +152,7 @@
                                             <li class="span3">
                                                 <div class="product-box">
                                                     <span class="sale_tag"></span>
-                                                    <a href=""><img alt="" src="/images/ladies/3.jpg"></a><br/>
+                                                    <a href=""><img alt="" src="images/ladies/3.jpg"></a><br/>
                                                     <a href="" class="title">Wuam ultrices rutrum</a><br/>
                                                     <a href="#" class="category">Suspendisse aliquet</a>
                                                     <p class="price">$341</p>
@@ -190,7 +190,7 @@
                                         <li class="span3">
                                             <div class="product-box">
                                                 <span class="sale_tag"></span>
-                                                <a href=""><img alt="" src="/images/ladies/7.jpg"></a><br/>
+                                                <a href=""><img alt="" src="images/ladies/7.jpg"></a><br/>
                                                 <a href="" class="title">Fusce id molestie massa</a><br/>
                                                 <a href="" class="category">Suspendisse aliquet</a>
                                                 <p class="price">$261</p>
@@ -202,7 +202,7 @@
                                     <ul class="thumbnails listing-products">
                                         <li class="span3">
                                             <div class="product-box">
-                                                <a href="#"><img alt="" src="/images/ladies/8.jpg"></a><br/>
+                                                <a href="#"><img alt="" src="images/ladies/8.jpg"></a><br/>
                                                 <a href="#" class="title">Tempor sem sodales</a><br/>
                                                 <a href="#" class="category">Urna nec lectus mollis</a>
                                                 <p class="price">$134</p>
@@ -218,19 +218,19 @@
                         <ul class="small-product">
                             <li>
                                 <a href="#" title="Praesent tempor sem sodales">
-                                    <img src="/images/ladies/1.jpg" alt="Praesent tempor sem sodales">
+                                    <img src="images/ladies/1.jpg" alt="Praesent tempor sem sodales">
                                 </a>
                                 <a href="#">Praesent tempor sem</a>
                             </li>
                             <li>
                                 <a href="#" title="Luctus quam ultrices rutrum">
-                                    <img src="/images/ladies/2.jpg" alt="Luctus quam ultrices rutrum">
+                                    <img src="images/ladies/2.jpg" alt="Luctus quam ultrices rutrum">
                                 </a>
                                 <a href="#">Luctus quam ultrices rutrum</a>
                             </li>
                             <li>
                                 <a href="#" title="Fusce id molestie massa">
-                                    <img src="/images/ladies/3.jpg" alt="Fusce id molestie massa">
+                                    <img src="images/ladies/3.jpg" alt="Fusce id molestie massa">
                                 </a>
                                 <a href="#">Fusce id molestie massa</a>
                             </li>
