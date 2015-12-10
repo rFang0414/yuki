@@ -9,74 +9,79 @@
         <li class="active">Member</li>
     </ol>
     <hr/>
-    <form onsubmit="return checkForm();" method="post" action="add_member">
-        <table>
-            <tr>
-                <td>
-                    <div class="form-inline">
-                        <div class="form-group">
-                            <label for="last_name">Last Name:&emsp;</label>
-                            <input type="text" class="form-control" name="last_name" id="last_name" placeholder="">&emsp;&emsp;&emsp;&emsp;
+    <div class="col-md-8">
+        <form onsubmit="return checkForm();" method="post" action="add_member">
+            <table>
+                <tr>
+                    <td>
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <label for="last_name">Last Name:&emsp;</label>
+                                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="">&emsp;&emsp;&emsp;&emsp;
+                            </div>
+                            <div class="form-group">
+                                <label for="first_name">First Name:&emsp;</label>
+                                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="first_name">First Name:&emsp;</label>
-                            <input type="text" class="form-control" name="first_name" id="first_name" placeholder="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Gender:&emsp;</label>&emsp;&nbsp;&nbsp;
+                        <label class="radio-inline">
+                            <input type="radio" name="gender" id="gander_male" checked value="male"> male
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="gender" id="gander_female" value="female"> female
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <label for="email">Email:&emsp;</label>
+                                <input type="email" class="form-control" style="width: 533px;" name="email" id="email" placeholder="">
+                            </div>
                         </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Gender:&emsp;</label>&emsp;&nbsp;&nbsp;
-                    <label class="radio-inline">
-                        <input type="radio" name="gender" id="gander_male" checked value="male"> male
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="gender" id="gander_female" value="female"> female
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="form-inline">
-                        <div class="form-group">
-                            <label for="email">Email:&emsp;</label>
-                            <input type="email" class="form-control" style="width: 533px;" name="email" id="email" placeholder="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <label>State:&emsp;</label>
+                                <select class="form-control" id="state" name="state">
+                                    <option value="" selected></option>
+                                    <option value="ACT">ACT</option>
+                                    <option value="NSW">NSW</option>
+                                    <option value="NT">NT</option>
+                                    <option value="QLD">QLD</option>
+                                    <option value="SA">SA</option>
+                                    <option value="TAS">TAS</option>
+                                    <option value="VIC">VIC</option>
+                                    <option value="WA">WA</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="form-inline">
-                        <div class="form-group">
-                            <label>State:&emsp;</label>
-                            <select class="form-control" id="state" name="state">
-                                <option value="" selected></option>
-                                <option value="ACT">ACT</option>
-                                <option value="NSW">NSW</option>
-                                <option value="NT">NT</option>
-                                <option value="QLD">QLD</option>
-                                <option value="SA">SA</option>
-                                <option value="TAS">TAS</option>
-                                <option value="VIC">VIC</option>
-                                <option value="WA">WA</option>
-                            </select>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <br/><br/><hr/>
-                    <input class="btn btn-primary" type="submit" style="width: 120px;" name="sub" value="Submit">&emsp;
-                    <input class="btn btn-default" type="reset" name="sub" value="Reset">
-                </td>
-            </tr>
-        </table>
-    </form>
-    <br/><br/>
-    <p>Please fill in your information so that we can contact you in time. You can join us, to complete the fashion industry.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br/><br/><hr/>
+                        <input class="btn btn-primary" type="submit" style="width: 120px;" name="sub" value="Submit">&emsp;
+                        <input class="btn btn-default" type="reset" name="sub" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br/><br/>
+        <p>Please fill in your information so that we can contact you in time. You can join us, to complete the fashion industry.</p>
+    </div>
+    <div class="col-md-4">
+        <img src="/images/astray.png">
+    </div>
 </div>
 
 <div class="modal fade bs-example-modal-sm" id="error" tabindex="-1" role="dialog" data-backdrop="static">

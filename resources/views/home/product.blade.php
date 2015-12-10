@@ -1,19 +1,34 @@
 @extends('header&footer')
-        <!-- bootstrap -->
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 
-<!-- global styles -->
 <link href="themes/css/main.css" rel="stylesheet"/>
 <link href="themes/css/jquery.fancybox.css" rel="stylesheet"/>
 
 @section('content')
     <div class="container-fluid">
         <!-- scripts -->
-        <script src="themes/js/jquery-1.7.2.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="themes/js/superfish.js"></script>
         <script src="themes/js/jquery.fancybox.js"></script>
+
+        <script type="text/javascript" language="JavaScript">
+            $(function () {
+                $('#myTab a:first').tab('show');
+                $('#myTab a').click(function (e) {
+                    e.preventDefault();
+                    $(this).tab('show');
+                })
+            })
+            $(document).ready(function() {
+                $('.thumbnail').fancybox({
+                    openEffect  : 'none',
+                    closeEffect : 'none'
+                });
+
+                $('#myCarousel-2').carousel({
+                    interval: 2500
+                });
+            });
+        </script>
 
         <section class="main-content" style="width: 1200px; margin: auto">
             <ol class="breadcrumb">
@@ -60,9 +75,9 @@
                                     <input type="checkbox" value=""> Be sure to include why it's great
                                 </label>
                                 <p>&nbsp;</p>
-                                <label>Qty:</label>
-                                <input type="text" class="span1" placeholder="1">
-                                <button class="btn btn-inverse" type="submit">Add to cart</button>
+                                <label>Quantity:</label>
+                                <input type="text" class="input-large" placeholder="1">
+                                <button class="btn btn-primary" type="submit">Add to cart</button>
                             </form>
                         </div>
                     </div>
@@ -104,8 +119,7 @@
                                         <ul class="thumbnails listing-products">
                                             <li class="span3">
                                                 <div class="product-box">
-                                                    <span class="sale_tag"></span>
-                                                    <a href=""><img alt="" src="images/ladies/6.jpg"></a><br/>
+                                                    <a href=""><img width="100%" src="images/ladies/6.jpg"></a><br/>
                                                     <a href="" class="title">Wuam ultrices rutrum</a><br/>
                                                     <a href="#" class="category">Suspendisse aliquet</a>
                                                     <p class="price">$341</p>
@@ -113,8 +127,7 @@
                                             </li>
                                             <li class="span3">
                                                 <div class="product-box">
-                                                    <span class="sale_tag"></span>
-                                                    <a href=""><img alt="" src="images/ladies/5.jpg"></a><br/>
+                                                    <a href=""><img width="100%" src="images/ladies/5.jpg"></a><br/>
                                                     <a href="" class="title">Fusce id molestie massa</a><br/>
                                                     <a href="#" class="category">Phasellus consequat</a>
                                                     <p class="price">$341</p>
@@ -122,7 +135,7 @@
                                             </li>
                                             <li class="span3">
                                                 <div class="product-box">
-                                                    <a href=""><img alt="" src="images/ladies/4.jpg"></a><br/>
+                                                    <a href=""><img width="100%" src="images/ladies/4.jpg"></a><br/>
                                                     <a href="" class="title">Praesent tempor sem</a><br/>
                                                     <a href="#" class="category">Erat gravida</a>
                                                     <p class="price">$28</p>
@@ -135,7 +148,7 @@
                                             <li class="span3">
                                                 <div class="product-box">
                                                     <span class="sale_tag"></span>
-                                                    <a href=""><img alt="" src="images/ladies/1.jpg"></a><br/>
+                                                    <a href=""><img width="100%" src="images/ladies/1.jpg"></a><br/>
                                                     <a href="" class="title">Fusce id molestie massa</a><br/>
                                                     <a href="#" class="category">Phasellus consequat</a>
                                                     <p class="price">$341</p>
@@ -143,7 +156,7 @@
                                             </li>
                                             <li class="span3">
                                                 <div class="product-box">
-                                                    <a href=""><img alt="" src="images/ladies/2.jpg"></a><br/>
+                                                    <a href=""><img width="100%" src="images/ladies/2.jpg"></a><br/>
                                                     <a href="">Praesent tempor sem</a><br/>
                                                     <a href="#" class="category">Erat gravida</a>
                                                     <p class="price">$28</p>
@@ -152,7 +165,7 @@
                                             <li class="span3">
                                                 <div class="product-box">
                                                     <span class="sale_tag"></span>
-                                                    <a href=""><img alt="" src="images/ladies/3.jpg"></a><br/>
+                                                    <a href=""><img width="100%" src="images/ladies/3.jpg"></a><br/>
                                                     <a href="" class="title">Wuam ultrices rutrum</a><br/>
                                                     <a href="#" class="category">Suspendisse aliquet</a>
                                                     <p class="price">$341</p>
@@ -190,7 +203,7 @@
                                         <li class="span3">
                                             <div class="product-box">
                                                 <span class="sale_tag"></span>
-                                                <a href=""><img alt="" src="images/ladies/7.jpg"></a><br/>
+                                                <a href=""><img width="100%" src="images/ladies/7.jpg"></a><br/>
                                                 <a href="" class="title">Fusce id molestie massa</a><br/>
                                                 <a href="" class="category">Suspendisse aliquet</a>
                                                 <p class="price">$261</p>
@@ -202,7 +215,7 @@
                                     <ul class="thumbnails listing-products">
                                         <li class="span3">
                                             <div class="product-box">
-                                                <a href="#"><img alt="" src="images/ladies/8.jpg"></a><br/>
+                                                <a href="#"><img width="100%" src="images/ladies/8.jpg"></a><br/>
                                                 <a href="#" class="title">Tempor sem sodales</a><br/>
                                                 <a href="#" class="category">Urna nec lectus mollis</a>
                                                 <p class="price">$134</p>
@@ -240,24 +253,4 @@
             </div>
         </section>
     </div>
-    <script src="/themes/js/common.js"></script>
-    <script>
-        $(function () {
-            $('#myTab a:first').tab('show');
-            $('#myTab a').click(function (e) {
-                e.preventDefault();
-                $(this).tab('show');
-            })
-        })
-        $(document).ready(function() {
-            $('.thumbnail').fancybox({
-                openEffect  : 'none',
-                closeEffect : 'none'
-            });
-
-            $('#myCarousel-2').carousel({
-                interval: 2500
-            });
-        });
-    </script>
 @endsection

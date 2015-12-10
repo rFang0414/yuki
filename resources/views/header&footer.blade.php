@@ -34,8 +34,9 @@
 			<li role="presentation"><a href="people">People</a></li>
 			<li role="presentation"><a href="online_survey">Online survey</a></li>
 			<li role="presentation"><a href="my_page">My Page</a></li>
+			@if($user != null && $user->Access == 1)
 			<li role="presentation"><a href="admin_page">Admin</a></li>
-
+			@endif
 			@if( $user != null )
 				<li role="presentation" class="pull-right"><a href="sign_out">Logout</a></li>
 				<li role="presentation" class="pull-right"><a href="my_page">Welcome {{$user->Username}}!</a></li>
@@ -66,7 +67,11 @@
 <div id="footer">
 	<div class="container-fluid">
 		<div class="text-center">
-			<p>http://www.BanDai.com && http://www.cssmoban.com/</p>
+			<p>
+				<img src="images/134.jpg" style="width: 60px; margin-right: 10px">
+				xzhang33 227317
+				<img src="images/134.jpg" style="width: 60px; margin-left: 10px">
+			</p>
 		</div>
 	</div>
 </div>

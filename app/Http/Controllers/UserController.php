@@ -71,8 +71,8 @@ class UserController extends Controller
         $input = Request::all();
         $Username = $input['Username'];
         $Password = md5($input['pwd']);
-        $Name = $input['name'];
-        $DOB = $input['DOB'];
+        $Name = $input['first_name'].' '.$input['last_name'];
+        $DOB = $input['year'].'-'.$input['month'].'-'.$input['day'];
         $Email = $input['email'];
         $now = date("Y-m-d h:i:s");
 

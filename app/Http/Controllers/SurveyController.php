@@ -24,7 +24,7 @@ class SurveyController extends Controller
         $now = date("Y-m-d h:i:s");
 
         Survey::create(['Gender'=>$gender, 'Satisfaction'=>$satisfaction, 'Country'=>$country, 'State'=>$state, 'City'=>$city, 'Created'=>$now]);
-        return redirect('/');
+        return redirect('/home');
     }
 
 }
