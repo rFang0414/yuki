@@ -11,6 +11,9 @@
         </ol>
         <h4>You can see staff's information here</h4>
         <hr/>
+        <div class="col-md-2">
+            <img src="images/manyoo.png">
+        </div>
         <div class="col-md-8">
         <?php
         $index = 1;
@@ -37,8 +40,8 @@
         }
         ?>
         </div>
-        <div class="col-md-4">
-            <img src="images/manyoo.png">
+        <div class="col-md-2">
+            <img src="images/manyoo_mirror.png">
         </div>
     </div>
 

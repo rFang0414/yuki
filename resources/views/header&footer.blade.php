@@ -46,15 +46,10 @@
 		</ul>
 	</div>
 </div>
-<div id="header">
-	<div class="container-fluid">
-		<div class="header-title">
-			<h1>Welcome to</h1>
-			<p class=""><img src="images/b_logo.png"></p>
-		</div>
+<div class="top_bg">
+	<div id="header">
 	</div>
 </div>
-
 
 
 

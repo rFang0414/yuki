@@ -86,8 +86,8 @@
     })
 </script>
 <div id="main" class="bg1">
-    <div class="container-fluid">
-    <div class="row col-md-offset-3 col-md-6">
+    <div class="container">
+    <div class="row col-md-offset-2 col-md-8">
         <ol class="breadcrumb">
             <li>Home</li>
             <li class="active">Member</li>
@@ -103,27 +103,34 @@
             <div class="panel-heading">Survey</div>
             <div class="panel-body">
                 <form action="online_survey" method="post" onsubmit="valid_form()">
-                    <div class="radio">
-                        <label><span>1:<br>Gender:</span></label>
-                        <label>
-                            <input type="radio" name="gender" id="gender1" value="Male" required>Male
-                        </label>
-                        <label>
-                            <input type="radio" name="gender" id="gender2" value="Female">Female
-                        </label>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="radio">
+                                <label><span>1:<br>Gender:</span></label>
+                                <label>
+                                    <input type="radio" name="gender" id="gender1" value="Male" required>Male
+                                </label>
+                                <label>
+                                    <input type="radio" name="gender" id="gender2" value="Female">Female
+                                </label>
+                            </div>
+                            <hr>
+                            <div class="radio">
+                                <label><span>2:<br>Satisfaction:</span></label>
+                                <label>
+                                    <input type="radio" name="satisfaction" id="satisfaction1" value="yes" required>Yes
+                                </label>
+                                <label>
+                                    <input type="radio" name="satisfaction" id="satisfaction2" value="no">No
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <img src="images/manyoo2.png">
+                        </div>
                     </div>
                     <hr>
-                    <div class="radio">
-                        <label><span>2:<br>Satisfaction:</span></label>
-                        <label>
-                            <input type="radio" name="satisfaction" id="satisfaction1" value="yes" required>Yes
-                        </label>
-                        <label>
-                            <input type="radio" name="satisfaction" id="satisfaction2" value="no">No
-                        </label>
-                    </div>
-                    <hr>
-                    <div class="radio">
+                    <div class="radio row">
                         <span><label>3:Location</label></span><br>
                         <div class="col-md-4" id="country">
                             <select class="form-control" name="country" required
