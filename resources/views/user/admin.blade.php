@@ -7,6 +7,7 @@
             $clickable = '';
         }
     ?>
+<div id="main" class="bg">
     <div class="container">
         <ol class="breadcrumb">
             <li>Home</li>
@@ -58,4 +59,5 @@
             </div>
         </form>
     </div>
+</div>
 @endsection

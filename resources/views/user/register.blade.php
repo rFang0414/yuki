@@ -73,6 +73,7 @@
     <?php
         $day_in_month = [31,29,31,30,31,30,31,31,30,31,30,31,];
     ?>
+<div id="main" class="bg1">
     <script>
         $(function() {
             $("#datepicker").datepicker({dateFormat: "yy/mm/dd"})
@@ -139,4 +140,5 @@
             </div>
         </div>
     </div>
+</div>
 @endsection

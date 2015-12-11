@@ -85,7 +85,8 @@
         $('#City').hide();
     })
 </script>
-<div class="container-fluid">
+<div id="main" class="bg1">
+    <div class="container-fluid">
     <div class="row col-md-offset-3 col-md-6">
         <ol class="breadcrumb">
             <li>Home</li>
@@ -155,5 +156,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection

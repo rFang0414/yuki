@@ -50,7 +50,7 @@
 	<div class="container-fluid">
 		<div class="header-title">
 			<h1>Welcome to</h1>
-			<p class="big-name">Bandai</p>
+			<p class=""><img src="images/b_logo.png"></p>
 		</div>
 	</div>
 </div>
@@ -58,9 +58,8 @@
 
 
 
-<div id="main">
-	@yield('content')
-</div>
+
+@yield('content')
 
 
 

@@ -1,17 +1,23 @@
 @extends('header&footer')
 
 @section('content')
-<div class="container">
+<div id="main" class="bg">
+    <div class="container">
     <ol class="breadcrumb">
         <li>Home</li>
         <li class="active">New In</li>
     </ol>
     <hr/>
     <p style="font-size: 15px;" class="intro_content col-md-8">
-        Bandai was founded in 1950. In the 1960s Bandai expanded to include export sales. Bandai's racing car set, which first appeared in 1962, became a huge success. The 1970s continued to see Bandai expand, with Bandai Models being established in 1971. Although not their most profitable range, Bandai's 1/48 scale AFV models dominated that segment of the model kit market. Bandai America Inc. was established as local US sales/marketing operation in 1978. Spacewarp, a line of build-it-yourself toy rolling ball "roller coasters" was introduced by Bandai in the 1980s.
+        Xu Yi was an AcFun user in 2009. He was unsatisfied by the instability of the service and decided to create an alternative out of fun. He spent three days and created a prototype website named Mikufans.cn as a fandom community of Hatsune Miku.[1] As it grew, he reshaped the website to specialize in video sharing and launched it on January 14, 2010 with the name Bilibili (bilibili.us), which is the nickname of the protagonist Mikoto Misaka in the anime Toaru Majutsu no Index for her electric superpower.[4]
         <br/><br/>
-        Since the 1980s, Bandai has become the leading toy company of Japan, and to this day, has the main toy licenses in Japan to popular properties including Daikaiju, Ultraman, Super Robot, Kamen Rider, the Super Sentai and Power Rangers series (which they took part in creating), Gundam and many others.
+        In 2011, Bilibili's domain name bilibili.us was revoked because of the domain registrar enforcing .US restrictions. As a result, Bilibili switched to bilibili.tv on June 25, 2011. Afterwards, in late 2011, Xu Yi founded the startup, Hangzhou Huandian Technology (Chinese: 幻电; pinyin: huàndiàn; literally: "fantastic electricity") based in Hangzhou, Zhejiang, for better development and operation of Bilibili.
+
+        In April 2012, Bilibili obtained an agreement with Nico Nico Douga to webcast latest Chinese-subbed episodes of the newly airing anime Fate/Zero starting from April 7.[5] However, this program was censored and ordered to stop after three episodes, for being reported as unauthorized operation of Internet audio-video broadcasting services. Its operating company Hangzhou Huandian Technology was administratively penalized and fined 10,000 yuan by local government.[6]
+
+        In August 2012, Bilibili started to display logos on its homepage to indicate affiliation with the state-owned Shanghai Media Group and share the use of various content provider licenses in hope to avoid future legal risk. Meanwhile, anonymous visitors to bilibili.tv got redirected to a subdomain of Shanghai Media Group Broad Band subsidiary (bilibili.smgbb.cn).
     </p>
-    <img src="images/sf.jpg" alt="new in" width="300" class="img-thumbnail">
+    <img src="images/doll.jpg" alt="new in" width="300" class="img-thumbnail">
+</div>
 </div>
 @endsection

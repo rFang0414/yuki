@@ -5,8 +5,11 @@
 <link href="themes/css/jquery.fancybox.css" rel="stylesheet"/>
 
 @section('content')
+<div id="main">
     <div class="container-fluid">
         <!-- scripts -->
+        <script src="themes/js/jquery-1.7.2.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="themes/js/superfish.js"></script>
         <script src="themes/js/jquery.fancybox.js"></script>
 
@@ -119,7 +122,7 @@
                                         <ul class="thumbnails listing-products">
                                             <li class="span3">
                                                 <div class="product-box">
-                                                    <a href=""><img width="100%" src="images/ladies/6.jpg"></a><br/>
+                                                    <a href=""><img width="100%" src="images/ladies/6.png"></a><br/>
                                                     <a href="" class="title">Wuam ultrices rutrum</a><br/>
                                                     <a href="#" class="category">Suspendisse aliquet</a>
                                                     <p class="price">$341</p>
@@ -215,7 +218,7 @@
                                     <ul class="thumbnails listing-products">
                                         <li class="span3">
                                             <div class="product-box">
-                                                <a href="#"><img width="100%" src="images/ladies/8.jpg"></a><br/>
+                                                <a href="#"><img width="100%" src="images/ladies/8.png"></a><br/>
                                                 <a href="#" class="title">Tempor sem sodales</a><br/>
                                                 <a href="#" class="category">Urna nec lectus mollis</a>
                                                 <p class="price">$134</p>
@@ -253,4 +256,5 @@
             </div>
         </section>
     </div>
+</div>
 @endsection

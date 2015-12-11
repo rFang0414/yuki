@@ -9,8 +9,9 @@
 <?php
     $user = session('user');
 ?>
+<div id="main" class="bg1">
     <div class="container">
-        <div class="row col-md-offset-2 col-md-8">
+        <div class="row col-md-offset-3 col-md-6">
             <div class="modal-header">
                 <h1 class="text-center text-primary">My Infomation</h1>
             </div>
@@ -39,4 +40,5 @@
             </div>
         </div>
     </div>
+</div>
 @endsection

@@ -1,5 +1,6 @@
 @extends('header&footer')
 @section('content')
+<div id="main" class="bg1">
     <div class="container">
         <div class="row col-md-offset-2 col-md-8">
             <div class="modal-header">
@@ -28,4 +29,5 @@
             </div>
         </div>
     </div>
+</div>
 @endsection

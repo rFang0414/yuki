@@ -12,38 +12,39 @@
             $('#detail').modal('show');
         }
     </script>
-    <div class="container">
-        <ol class="breadcrumb">
-            <li>Home</li>
-            <li class="active">Women</li>
-        </ol>
-        <hr/>
-        <div class="pull-left">
-            <div>
-                <img onclick="showDetail(this)" src="images/xiongba1.jpg" alt="BEARGGUY Styly1" data-price="$299"
-                     width="300" class="img-thumbnail women_pic">
+    <div id="main" class="bg">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li>Home</li>
+                <li class="active">Women</li>
+            </ol>
+            <hr/>
+            <div class="pull-left">
+                <div>
+                    <img onclick="showDetail(this)" src="images/mobile_charger.jpg" alt="Mobile Charger" data-price="$299"
+                         width="300" class="img-thumbnail women_pic">
+                </div>
+                <div class="text-center"><span><a href="product_detail">Mobile Charger</a></span></div>
             </div>
-            <div class="text-center"><span><a href="product_detail">detail</a></span></div>
-        </div>
-        <div class="pull-left">
-            <div>
-                <img onclick="showDetail(this)" src="images/xiongba2.jpg" alt="BEARGGUY Style2" data-price="$150"
-                     width="300" class="img-thumbnail women_pic">
+            <div class="pull-left">
+                <div>
+                    <img onclick="showDetail(this)" src="images/shoes.png" alt="Canvas shoes" data-price="$150"
+                         width="300" class="img-thumbnail women_pic">
+                </div>
+                <div class="text-center"><span><a href="product_detail">Canvas shoes</a></span></div>
             </div>
-            <div class="text-center"><span><a href="product_detail">detail</a></span></div>
-        </div>
-        <div class="pull-left">
-            <div>
-                <img onclick="showDetail(this)" src="images/xiongba.jpg" alt="BEARGGUY Style3" data-price="$320"
-                     width="300" class="img-thumbnail women_pic">
+            <div class="pull-left">
+                <div>
+                    <img onclick="showDetail(this)" src="images/pillow.jpg" alt="Bilibili Pillow" data-price="$320"
+                         width="300" class="img-thumbnail women_pic">
+                </div>
+                <div class="text-center"><span><a href="product_detail">Bilibili Pillow</a></span></div>
             </div>
-            <div class="text-center"><span><a href="product_detail">detail</a></span></div>
-        </div>
-        <br/>
+            <br/>
 
-    </div>
-    <div class="clearfix"></div>
-    <div class="modal fade" id="detail" tabindex="-1" role="dialog">
+        </div>
+        <div class="clearfix"></div>
+        <div class="modal fade" id="detail" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
@@ -58,5 +59,6 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 @endsection

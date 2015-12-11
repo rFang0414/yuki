@@ -2,7 +2,8 @@
 @section('content')
 <script type="text/javascript" language="JavaScript">
 </script>
-<div class="container-fluid">
+<div id="main" class="bg">
+    <div class="container-fluid">
     <div class="panel-group col-md-8 col-md-offset-2" id="accordion" role="tablist" aria-multiselectable="true">
         <ol class="breadcrumb">
             <li>Home</li>
@@ -37,9 +38,10 @@
         ?>
         </div>
         <div class="col-md-4">
-            <img src="/images/sf1.png">
+            <img src="images/manyoo.png">
         </div>
     </div>
 
+</div>
 </div>
 @endsection
