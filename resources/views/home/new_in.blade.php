@@ -17,7 +17,7 @@
 
         In August 2012, Bilibili started to display logos on its homepage to indicate affiliation with the state-owned Shanghai Media Group and share the use of various content provider licenses in hope to avoid future legal risk. Meanwhile, anonymous visitors to bilibili.tv got redirected to a subdomain of Shanghai Media Group Broad Band subsidiary (bilibili.smgbb.cn).
     </p>
-    <img src="images/doll.jpg" alt="new in" width="300" class="img-thumbnail">
+    <a href="product_detail"><img src="images/doll.jpg" alt="new in" width="300" class="img-thumbnail"></a>
 </div>
 </div>
 @endsection
